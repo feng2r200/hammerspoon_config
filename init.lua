@@ -60,7 +60,7 @@ function()
 end)
 
 -- Register resizeM with modal supervisor
-local hyper={"ctrl", "alt", "cmd"}
+local hyper={"shift", "alt", "cmd"}
 local hsresizeM_keys = {hyper, "space"}
 if string.len(hsresizeM_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hsresizeM_keys[1], hsresizeM_keys[2], "Enter Control", function()
